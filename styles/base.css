@@ -1,0 +1,26 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #131313;
+    --sidebar: #05070b;
+    --card: #12161d;
+    --border: #232833;
+    --text: #f3f4f6;
+    --sub: #a7adb8;
+    --accent: #46a6ff;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

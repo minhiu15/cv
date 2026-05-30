@@ -1,0 +1,20 @@
+﻿.container {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    min-height: 100vh;
+}
+
+.content {
+    padding: 60px;
+}
+
+.section {
+    margin-bottom: 90px;
+}
+
+.section-title {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+    font-weight: 700;
+}

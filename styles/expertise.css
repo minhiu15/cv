@@ -1,0 +1,40 @@
+﻿.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 28px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    padding: 32px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(70, 166, 255, 0.4);
+}
+
+.card-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+    background: rgba(70, 166, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+    font-size: 28px;
+}
+
+.card h3 {
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.card p {
+    color: var(--sub);
+    line-height: 1.8;
+}

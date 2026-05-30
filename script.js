@@ -1,23 +1,17 @@
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-links a");
+document.querySelectorAll('.education-header').forEach(header => {
 
-window.addEventListener("scroll", () => {
-  let current = "";
+  header.addEventListener('click', () => {
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
+    const item = header.closest('.education-item');
+    const isActive = item.classList.contains('active');
 
-    if (window.scrollY >= sectionTop - 300) {
-      current = section.getAttribute("id");
+    document.querySelectorAll('.education-item').forEach(i => {
+      i.classList.remove('active');
+    });
+
+    if (!isActive) {
+      item.classList.add('active');
     }
-  });
 
-  navLinks.forEach((link) => {
-    link.classList.remove("highlight");
-
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("highlight");
-    }
   });
 });

@@ -1,0 +1,47 @@
+﻿.timeline {
+    border-left: 2px solid var(--border);
+    padding-left: 36px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.timeline-item::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: var(--accent);
+    border-radius: 50%;
+    position: absolute;
+    left: -45px;
+    top: 6px;
+    box-shadow: 0 0 0 8px rgba(70, 166, 255, 0.15);
+}
+
+.timeline-date {
+    color: var(--accent);
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.timeline-item h3 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.timeline-company {
+    color: var(--sub);
+    margin-bottom: 24px;
+}
+
+.timeline-item ul {
+    padding-left: 22px;
+    color: var(--sub);
+}
+
+.timeline-item li {
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
