@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/sidebar.css">
@@ -20,11 +21,12 @@
     <link rel="stylesheet" href="styles/education.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/themeButton.css">
+    <link rel="stylesheet" href="styles/showcase/showcase.character.css">
     
   </head>
 
   <body>
-  
+    
   <div class="page-wrapper">
     
     <div class="container">
@@ -68,9 +70,18 @@
           <div class="section-title">CONTACT</div>
 
           <ul class="contact-list">
-            <li>📞 +84 36 290 4582</li>
-            <li>✉️ mmhieu.ag@gmail.com</li>
-            <li>📍 Ho Chi Minh City, Vietnam</li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+84 36 290 4582</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>mmhieu.ag@gmail.com</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Binh Tan, Ho Chi Minh City</span>
+            </li>
           </ul>
         </div>
 
@@ -79,8 +90,8 @@
           <div class="section-title">LINKS</div>
 
           <ul class="link-list">
-            <li><a href="https://github.com/minhiu15" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/minhiu/" target="_blank" >LinkedIn</a></li>
+            <li><a href="https://github.com/minhiu15" target="_blank"> <i class="fa-brands fa-github"></i> GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/minhiu/" target="_blank" > <i class="fa-brands fa-linkedin"></i> LinkedIn ↗</a></li>
           </ul>
         </div>
 
@@ -166,6 +177,58 @@
           </div>
         </section>
 
+        <!-- EDUCATION -->
+        <section class="section">
+          <div class="education-accordion">
+
+            <div class="section-title">EDUCATION</div>
+
+            <div class="education-item">
+
+              <button class="education-header">
+                <span>COLLEGE LY TU TRONG</span>
+                <span class="arrow">▼</span>
+              </button>
+
+              <div class="education-body">
+                <div class="education-body-inner">
+                  <h3 class="education-major">Electronic Engineering Technology</h3>
+                  <div class="education-date">2016 - 2019</div>
+                  <ul class="education-list">
+                    <li>Studied electronic circuits, sensors, and embedded systems.</li>
+                    <li>Worked with microcontrollers and basic hardware programming.</li>
+                    <li>Learned troubleshooting, system analysis, and technical problem solving.</li>
+                    <li>Participated in practical projects involving electronic devices and automation.</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="education-item">
+
+              <button class="education-header">
+                <span>GREEN ACADEMY</span>
+                <span class="arrow">▼</span>
+              </button>
+
+              <div class="education-body">
+                <div class="education-body-inner">
+                  <h3 class="education-major">Unity Game Development</h3>
+                  <div class="education-date">2023 - 2024</div>
+                  <ul class="education-list">
+                    <li>Developed gameplay systems and game features using Unity and C#.</li>
+                    <li>Built UI screens, popups, and user interaction flows.</li>
+                    <li>Practiced game architecture, data management, and debugging techniques.</li>
+                    <li>Completed hands-on projects following a full game development workflow.</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
         <!-- EXPERIENCE -->
         <section class="section">
           <div class="section-title">EXPERIENCE</div>
@@ -183,22 +246,21 @@
 
               <ul>
                 <li>
-                  Develop and maintain gameplay systems using Unity and C#.
+                  Develop and maintain gameplay systems, progression mechanics, and reusable game features using Unity and C#.
                 </li>
 
                 <li>
-                  Build asynchronous loading systems using Unity Addressables.
+                  Build asynchronous asset loading workflows with Unity Addressables to support scalable content delivery and efficient memory management.
                 </li>
 
                 <li>
-                  Optimize loading performance and asset memory usage on
-                  Android.
+                  Optimize loading performance, asset streaming, and memory usage for Android devices to improve stability and user experience.
                 </li>
 
-                <li>Create internal editor tools and animation workflows.</li>
+                <li>Create internal editor tools and production workflows that help designers and artists iterate content more efficiently.</li>
 
                 <li>
-                  Integrate Spine animations and VFX into gameplay systems.
+                  Integrate Spine animations, UI motion, and visual effects into gameplay systems to enhance visual polish and overall game feel.
                 </li>
               </ul>
             </div>
@@ -215,16 +277,15 @@
 
               <ul>
                 <li>
-                  Create Spine animations for characters and environments.
+                  Create Spine animations for characters, environments, and in-game visual elements.
                 </li>
 
                 <li>
-                  Collaborate with artists and designers for mobile game
-                  production.
+                  Collaborate closely with artists, designers, and developers to support mobile game production and content implementation.
                 </li>
 
                 <li>
-                  Produce animated promotional visuals and marketing assets.
+                  Produce animated promotional materials, marketing visuals, and showcase assets for game campaigns and releases.
                 </li>
               </ul>
             </div>
@@ -332,57 +393,92 @@
           </div>
         </section>
 
-        <!-- EDUCATION -->
-        <div class="education-accordion">
+        <!-- SHOWCASE -->
+        <section class="section animation-section">
 
-          <div class="section-title">EDUCATION</div>
+          <div class="section-title">
+            ANIMATION SHOWCASE
+          </div>
 
-          <div class="education-item">
+          <!-- CATEGORY -->
 
-            <button class="education-header">
-              <span>COLLEGE LY TU TRONG</span>
-              <span class="arrow">▼</span>
+          <div class="animation-category">
+
+            <button class="category-btn active"
+                    data-target="character">
+              Character
             </button>
 
-            <div class="education-body">
-              <div class="education-body-inner">
-                <h3 class="education-major">Electronic Engineering Technology</h3>
-                <div class="education-date">2016 - 2019</div>
-                <ul class="education-list">
-                  <li>Studied electronic circuits, sensors, and embedded systems.</li>
-                  <li>Worked with microcontrollers and basic hardware programming.</li>
-                  <li>Learned troubleshooting, system analysis, and technical problem solving.</li>
-                  <li>Participated in practical projects involving electronic devices and automation.</li>
-                </ul>
-              </div>
+            <button class="category-btn"
+                    data-target="ui">
+              UI
+            </button>
+
+          </div>
+
+          <!-- CHARACTER -->
+
+          <div class="animation-content active" id="character">
+
+            <div class="animation-viewer">
+
+              <img
+                      id="characterPreview"
+                      src="images/anim/idle.gif"
+                      alt="Character Animation">
+
+            </div>
+
+            <div class="animation-tabs">
+
+              <button class="anim-tab active"
+                      data-animation="idle">
+                Idle
+              </button>
+              
+              <button class="anim-tab"
+                      data-animation="hit">
+                Hit
+              </button>
+
+              <button class="anim-tab"
+                      data-animation="dead">
+                Dead
+              </button>
+              
+              <button class="anim-tab"
+                      data-animation="attack">
+                Attack
+              </button>
+
+              <button class="anim-tab"
+                      data-animation="skill">
+                Skill
+              </button>
+              
+
             </div>
 
           </div>
 
-          <div class="education-item">
+          <!-- UI -->
 
-            <button class="education-header">
-              <span>GREEN ACADEMY</span>
-              <span class="arrow">▼</span>
-            </button>
+          <div class="animation-content"
+               id="ui">
 
-            <div class="education-body">
-              <div class="education-body-inner">
-                <h3 class="education-major">Unity Game Development</h3>
-                <div class="education-date">2023 - 2024</div>
-                <ul class="education-list">
-                  <li>Developed gameplay systems and game features using Unity and C#.</li>
-                  <li>Built UI screens, popups, and user interaction flows.</li>
-                  <li>Practiced game architecture, data management, and debugging techniques.</li>
-                  <li>Completed hands-on projects following a full game development workflow.</li>
-                </ul>
-              </div>
+            <div class="ui-grid">
+
+              <img src="images/ui/popup.gif" alt="">
+              <img src="images/ui/reward.gif" alt="">
+              <img src="images/ui/button.gif" alt="">
+              <img src="images/ui/loading.gif" alt="">
+
             </div>
 
           </div>
 
-        </div>
-
+        </section>
+        
       </main>
     </div>
   </div>
@@ -392,7 +488,7 @@
     <span>Dark</span>
   </button>
 
-  <script src="script.js"></script>
+  <script type="module" src="scripts/index.js"></script>
 
   </body>
 </html>

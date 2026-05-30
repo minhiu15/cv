@@ -58,8 +58,26 @@
 
 .contact-list li,
 .link-list li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
     margin-bottom: 18px;
     color: var(--sub);
+}
+
+.link-list a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--sub);
+
+    transition: all .25s ease;
+}
+
+.link-list a:hover {
+    color: var(--accent);
+    transform: translateX(4px);
 }
 
 .link-list a:hover {
@@ -87,3 +105,4 @@
     transform: translateY(-2px);
     background: rgba(70, 166, 255, 0.18);
 }
+
