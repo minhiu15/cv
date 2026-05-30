@@ -16,27 +16,20 @@ document.querySelectorAll('.education-header').forEach(header => {
   });
 });
 
-const themeBtn = document.getElementById("themeBtn");
 
-const savedTheme = localStorage.getItem("theme");
+const btn = document.getElementById("theme-toggle");
 
-if (savedTheme === "light") {
-  document.body.classList.add("light-mode");
-  themeBtn.textContent = "☀️ Light";
-}
-
-themeBtn.addEventListener("click", () => {
-
+btn.addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
 
-  const isLight =
-      document.body.classList.contains("light-mode");
+  const icon = btn.querySelector("i");
+  const text = btn.querySelector("span");
 
-  localStorage.setItem(
-      "theme",
-      isLight ? "light" : "dark"
-  );
-
-  themeBtn.textContent =
-      isLight ? "☀️ Light" : "🌙 Dark";
+  if (document.body.classList.contains("light-mode")) {
+    icon.className = "bi bi-sun";
+    text.textContent = "Light";
+  } else {
+    icon.className = "bi bi-moon-stars";
+    text.textContent = "Dark";
+  }
 });

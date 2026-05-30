@@ -35,17 +35,27 @@
 .education-header:hover {
     background: var(--education-header-hover);
 }
-    
+
 .education-body {
-    max-height: 0;
-    overflow: hidden;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .35s ease;
     background: var(--card);
+}
+
+.education-body-inner {
+    overflow: hidden;
     padding: 0 28px;
     color: var(--sub);
     line-height: 1.8;
-    transition:
-            max-height 0.35s ease,
-            padding 0.35s ease;
+}
+
+.education-item.active .education-body {
+    grid-template-rows: 1fr;
+}
+
+.education-item.active .education-body-inner {
+    padding: 28px;
 }
 
 .education-item.active .education-header {
@@ -54,10 +64,6 @@
     color: var(--accent);
 }
 
-.education-item.active .education-body {
-    max-height: 300px;
-    padding: 28px;
-}
 .arrow {
     transition: transform .3s ease;
 }

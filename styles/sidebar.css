@@ -1,5 +1,6 @@
 ﻿.sidebar {
     background: var(--sidebar);;
+    border-left: 1px solid var(--border);
     border-right: 1px solid var(--border);
     padding: 48px 36px;
     position: sticky;

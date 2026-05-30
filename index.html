@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/sidebar.css">
@@ -31,7 +31,7 @@
       <!-- SIDEBAR -->
       <aside class="sidebar">
         <div class="avatar">
-          <!-- <img src="images/ava.png" alt=""> -->
+           <img src="images/ava.png" alt=""> 
         </div>
 
         <h1 class="name">
@@ -84,10 +84,6 @@
           </ul>
         </div>
 
-        <div class="theme-toggle">
-          <button id="themeBtn">🌙 Dark</button>
-        </div>
-
       </aside>
 
       <!-- MAIN CONTENT -->
@@ -110,15 +106,15 @@
           </p>
         </section>
 
-        <!-- WHAT I DO -->
+        <!--EXPERTISE-->
         <section class="section">
           <div class="section-title">EXPERTISE</div>
 
-          <div class="role">HERE ARE SOME OF MY EXPERTISE</div>
+          <div class="section-title-role">HERE ARE SOME OF MY EXPERTISE</div>
 
           <div class="card-grid">
             <div class="card">
-              <div class="card-icon">🎮</div>
+              <div class="card-icon">🎯</div>
 
               <h3>Gameplay Systems</h3>
 
@@ -129,7 +125,7 @@
             </div>
 
             <div class="card">
-              <div class="card-icon">🛠️</div>
+              <div class="card-icon">🎨</div>
 
               <h3>UI/UX Integration</h3>
 
@@ -148,9 +144,9 @@
             </div>
 
             <div class="card">
-              <div class="card-icon">🦴</div>
+              <div class="card-icon">✨</div>
 
-              <h3>Spine Animation</h3>
+              <h3>Spine & VFX</h3>
 
               <p>Create character and UI animations with Spine, including VFX and motion effects to improve game feel and visual polish.</p>
             </div>
@@ -349,14 +345,16 @@
             </button>
 
             <div class="education-body">
-              <h3 class="education-major">Electronic Engineering Technology</h3>
-              <div class="education-date">2016 - 2019</div>
-              <ul class="education-list">
-                <li>Studied electronic circuits, sensors, and embedded systems.</li>
-                <li>Worked with microcontrollers and basic hardware programming.</li>
-                <li>Learned troubleshooting, system analysis, and technical problem solving.</li>
-                <li>Participated in practical projects involving electronic devices and automation.</li>
-              </ul>
+              <div class="education-body-inner">
+                <h3 class="education-major">Electronic Engineering Technology</h3>
+                <div class="education-date">2016 - 2019</div>
+                <ul class="education-list">
+                  <li>Studied electronic circuits, sensors, and embedded systems.</li>
+                  <li>Worked with microcontrollers and basic hardware programming.</li>
+                  <li>Learned troubleshooting, system analysis, and technical problem solving.</li>
+                  <li>Participated in practical projects involving electronic devices and automation.</li>
+                </ul>
+              </div>
             </div>
 
           </div>
@@ -369,14 +367,16 @@
             </button>
 
             <div class="education-body">
-              <h3 class="education-major">Unity Game Development</h3>
-              <div class="education-date">2023 - 2024</div>
-              <ul class="education-list">
-                <li>Developed gameplay systems and game features using Unity and C#.</li>
-                <li>Built UI screens, popups, and user interaction flows.</li>
-                <li>Practiced game architecture, data management, and debugging techniques.</li>
-                <li>Completed hands-on projects following a full game development workflow.</li>
-              </ul>
+              <div class="education-body-inner">
+                <h3 class="education-major">Unity Game Development</h3>
+                <div class="education-date">2023 - 2024</div>
+                <ul class="education-list">
+                  <li>Developed gameplay systems and game features using Unity and C#.</li>
+                  <li>Built UI screens, popups, and user interaction flows.</li>
+                  <li>Practiced game architecture, data management, and debugging techniques.</li>
+                  <li>Completed hands-on projects following a full game development workflow.</li>
+                </ul>
+              </div>
             </div>
 
           </div>
@@ -386,6 +386,11 @@
       </main>
     </div>
   </div>
+
+  <button id="theme-toggle" class="theme-toggle">
+    <i class="bi bi-moon-stars"></i>
+    <span>Dark</span>
+  </button>
 
   <script src="script.js"></script>
 
