@@ -4,6 +4,18 @@
     gap: 28px;
 }
 
+@media (max-width: 1400px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .card {
     background: var(--card);
     border: 1px solid var(--border);

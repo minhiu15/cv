@@ -1,5 +1,5 @@
 ﻿.sidebar {
-    background: rgb(22, 22, 22);
+    background: var(--sidebar);;
     border-right: 1px solid var(--border);
     padding: 48px 36px;
     position: sticky;
@@ -30,7 +30,7 @@
 .name {
     font-size: 34px;
     line-height: 1.05;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .role {
@@ -43,7 +43,7 @@
 .about {
     color: var(--sub);
     line-height: 1.9;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
 }
 
 .sidebar-section {
@@ -69,6 +69,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    margin-bottom: 20px;
 }
 
 .tech-tags span {

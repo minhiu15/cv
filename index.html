@@ -19,15 +19,19 @@
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/education.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/themeButton.css">
     
   </head>
 
   <body>
+  
+  <div class="page-wrapper">
+    
     <div class="container">
       <!-- SIDEBAR -->
       <aside class="sidebar">
         <div class="avatar">
-           <!-- <img src="images/ava.png" alt=""> -->
+          <!-- <img src="images/ava.png" alt=""> -->
         </div>
 
         <h1 class="name">
@@ -35,9 +39,29 @@
           HIEU
         </h1>
 
-        <div class="role">UNITY GAME DEVELOPER</div>
+        <div class="role">UNITY GAME DEVELOPER <br>/ 2D ANIMATOR</div>
 
-        <p class="about">Passionate about building smooth and scalable mobile game experiences.</p>
+        <p class="about"></p>
+
+        <!-- TECH STACK -->
+        <div class="sidebar-section">
+          <div class="section-title">TECH STACK</div>
+
+          <div class="tech-tags">
+            <span>Unity</span>
+            <span>C#</span>
+            <span>Addressables</span>
+            <span>UniTask</span>
+            <span>DOTween</span>
+            <span>Object Pooling</span>
+            <span>Spine</span>
+            <span>Mobile Optimization</span>
+            <span>Editor Tools</span>
+            <span>UI System</span>
+            <span>ScriptableObject</span>
+            <span>Git</span>
+          </div>
+        </div>
 
         <!-- CONTACT -->
         <div class="sidebar-section">
@@ -50,54 +74,46 @@
           </ul>
         </div>
 
-        <!-- TECH STACK -->
-        <div class="sidebar-section">
-          <div class="section-title">TECH STACK</div>
-
-          <div class="tech-tags">
-            <span>Unity</span>
-            <span>C#</span>
-            <span>Addressables</span>
-            <span>UniTask</span>
-            <span>DOTween</span>
-            <span>Spine</span>
-            <span>Object Pooling</span>
-            <span>Mobile Optimization</span>
-            <span>Editor Tools</span>
-            <span>UI System</span>
-            <span>ScriptableObject</span>
-            <span>Git</span>
-          </div>
-        </div>
-
         <!-- LINKS -->
         <div class="sidebar-section">
           <div class="section-title">LINKS</div>
 
           <ul class="link-list">
-            <li>
-              <a href="https://github.com/minhiu15" target="_blank">GitHub</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/minhiu/" target="_blank" >LinkedIn</a>
-            </li>
+            <li><a href="https://github.com/minhiu15" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/minhiu/" target="_blank" >LinkedIn</a></li>
           </ul>
         </div>
+
+        <div class="theme-toggle">
+          <button id="themeBtn">🌙 Dark</button>
+        </div>
+
       </aside>
 
       <!-- MAIN CONTENT -->
       <main class="content">
         <!-- INFO -->
         <section class="hero">
-          <h2>Building scalable gameplay systems for mobile games.</h2>
-
-          <p>Developed gameplay features, async asset loading systems, editor tools, and Spine animation workflows for production mobile games using Unity and C#.</p>
+          <div class="section-title">SUMMARY</div>
+          <p>
+            2+ years of experience as a Unity Game Developer and 1+ year in game animation,
+            contributing to the development and live operation of commercial mobile game projects.
+            Experienced in implementing gameplay features, content updates, UI systems, and
+            production tools within a collaborative development environment.
+          </p>
+          <br>
+          <p>
+            Able to work effectively both independently and as part of a multidisciplinary team.
+            Experienced collaborating with game designers, artists, animators, QA, and producers
+            to deliver high-quality features. Strong analytical, research, and problem-solving
+            abilities with a continuous learning mindset.
+          </p>
         </section>
 
         <!-- WHAT I DO -->
         <section class="section">
-          <div class="section-title">WHAT I DO</div>
-          
+          <div class="section-title">EXPERTISE</div>
+
           <div class="role">HERE ARE SOME OF MY EXPERTISE</div>
 
           <div class="card-grid">
@@ -132,14 +148,14 @@
             </div>
 
             <div class="card">
-                <div class="card-icon">🦴</div>
+              <div class="card-icon">🦴</div>
 
-                <h3>Spine Animation</h3>
+              <h3>Spine Animation</h3>
 
-                <p>Create character and UI animations with Spine, including VFX and motion effects to improve game feel and visual polish.</p>
+              <p>Create character and UI animations with Spine, including VFX and motion effects to improve game feel and visual polish.</p>
             </div>
 
-            
+
             <div class="card">
               <div class="card-icon">⚡</div>
 
@@ -227,7 +243,7 @@
             <!-- PROJECT - Ancient Gods -->
             <div class="project-card">
               <div class="project-image"> <img src="images/ancient_god_header.png" alt=""></div>
-            
+
               <div class="project-content">
                 <h3>Ancient Gods</h3>
 
@@ -324,7 +340,7 @@
         <div class="education-accordion">
 
           <div class="section-title">EDUCATION</div>
-          
+
           <div class="education-item">
 
             <button class="education-header">
@@ -366,10 +382,12 @@
           </div>
 
         </div>
-        
+
       </main>
     </div>
+  </div>
 
   <script src="script.js"></script>
+
   </body>
 </html>

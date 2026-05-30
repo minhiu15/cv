@@ -1,7 +1,22 @@
 ﻿.project-grid {
+    padding-top: 10px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(340px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
+}
+
+@media (max-width: 1400px) {
+    .project-grid 
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-grid 
+    {
+        grid-template-columns: 1fr;
+    }
 }
 
 .project-card {

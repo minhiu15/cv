@@ -23,7 +23,7 @@
     border: none;
     cursor: pointer;
 
-    background: #151b25;
+    background: var(--education-header-bg);
     color: var(--text);
 
     font-size: 18px;
@@ -33,7 +33,7 @@
 }
 
 .education-header:hover {
-    background: #1a2230;
+    background: var(--education-header-hover);
 }
     
 .education-body {
@@ -41,7 +41,7 @@
     overflow: hidden;
     background: var(--card);
     padding: 0 28px;
-    color: #a8b2c1;
+    color: var(--sub);
     line-height: 1.8;
     transition:
             max-height 0.35s ease,
@@ -49,11 +49,7 @@
 }
 
 .education-item.active .education-header {
-    background: linear-gradient(
-            135deg,
-            rgba(70,166,255,.12),
-            rgba(70,166,255,.04)
-    );
+    background: var(--education-active-bg);
     border-bottom: 1px solid rgba(70,166,255,.15);
     color: var(--accent);
 }
