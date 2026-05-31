@@ -44,9 +44,6 @@
             opacity .5s ease;
 
     transform-origin: center center;
-    /*filter:*/
-    /*        drop-shadow(0 0 20px rgba(70,166,255,.2))*/
-    /*        drop-shadow(0 0 40px rgba(70,166,255,.1));*/
 }
 
 .animation-viewer {
