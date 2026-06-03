@@ -12,6 +12,7 @@
     --text: #f3f4f6;
     --sub: #a7adb8;
     --accent: #46a6ff;
+    --scrollBar: #65b1ff;
 
     --education-header-bg: #151b25;
     --education-header-hover: #1a2230;
@@ -31,7 +32,8 @@ body.light-mode {
     --text: #222831;
     --sub: #6b7280;
     --accent: #2c98f0;
-
+    --scrollBar: #65b1ff;
+    
     --education-header-bg: #f5f7fa;
     --education-header-hover: #edf2f7;
     --education-active-bg:
